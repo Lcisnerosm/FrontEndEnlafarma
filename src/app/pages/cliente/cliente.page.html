@@ -1,0 +1,37 @@
+<ion-header no-border>
+  <ion-toolbar color="primary">
+    <ion-buttons>
+      <ion-button (click)="toggleMenu()">
+        <ion-icon slot="icon-only" name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="title" >ENLAFARMA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content >
+    <ion-grid>
+      <ion-row class="justify-content-center body-color">
+        <ion-col class="align-self-center" size-md="6" size-lg="5" size-xs="12">
+          <div text-center>
+            <h4 class="tit" align="center">CLIENTE</h4>
+          </div>
+          <br>
+          <div>
+          <p>Codigo:</p>
+          <p>Nit:</p>
+          </div>
+          <p>Razon Social:</p>
+          <p>Direccion:</p>
+          <p>Telefono:</p>
+          <p>Nombre Contacto:</p>
+          <div class="padding">
+            <ion-button size="default" href="/touchid" expand="block">Historial</ion-button>
+            <ion-button size="default" href="/touchid" expand="block">Pedido</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  </ion-content>
+  

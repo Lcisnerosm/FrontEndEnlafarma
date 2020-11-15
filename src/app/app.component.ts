@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { LoginService } from 'src/app/services/login.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +15,9 @@ export class AppComponent {
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    private loginUser: LoginService,
+    private router: Router
   ) {
     this.initializeApp();
   }
@@ -24,4 +28,10 @@ export class AppComponent {
       this.splashScreen.hide();
     });
   }
+
+  logout(){
+    this.loginUser.logout();
+    this.router.navigateByUrl('/login');
+  }
+
 }

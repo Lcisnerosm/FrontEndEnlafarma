@@ -1,0 +1,46 @@
+<div class="body-color">
+  <ion-header >
+    <ion-toolbar color="primary">
+      <ion-buttons>
+        <ion-button (click)="toggleMenu()">
+          <ion-icon slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-title class="title" >ENLAFARMA</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  </div>
+  
+  <ion-content >
+    <ion-grid>
+      <ion-row class="justify-content-center body-color">
+        <ion-col class="align-self-center" size-md="6" size-lg="5" size-xs="12">
+          <div text-center>
+            <h4 class="tit" align="center">NUEVO PEDIDO</h4>
+          </div>
+          <br>
+          <ion-item>
+            <ion-label position="floating">Razon Social</ion-label>
+            <ion-input placeholder="Ingresar Razon Social"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Direccion:</ion-label>
+            <ion-input placeholder="Ingresar Direccion"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Telefono:</ion-label>
+            <ion-input placeholder="Ingresar Telefono"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Nombre Contacto:</ion-label>
+            <ion-input placeholder="Ingresar Nombre"></ion-input>
+          </ion-item>
+          <div class="padding">
+            <ion-button size="default" href="/touchid" expand="block">Enviar</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+  </ion-content>
+  
